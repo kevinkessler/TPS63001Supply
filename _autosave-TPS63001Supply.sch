@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L KevinLib:TPS63000 U1
+U 1 1 5AF8FD8A
+P 5650 3450
+F 0 "U1" H 5900 3000 50  0000 C CNN
+F 1 "TPS630001" H 5650 3800 50  0000 C CNN
+F 2 "KevinLibrary:TPS63000" H 5650 3450 50  0001 C CNN
+F 3 "DOCUMENTATION" H 5650 3450 50  0001 C CNN
+	1    5650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3450 4300 3450
+Wire Wire Line
+	4300 3450 4300 4300
+Wire Wire Line
+	4300 4300 5650 4300
+Wire Wire Line
+	5650 4150 5650 4300
+$Comp
+L Device:L L1
+U 1 1 5AF900E5
+P 4500 3350
+F 0 "L1" V 4450 3350 50  0000 C CNN
+F 1 "2.2uH" V 4575 3350 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 4500 3350 50  0001 C CNN
+F 3 "" H 4500 3350 50  0001 C CNN
+	1    4500 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 3350 4650 3350
+Wire Wire Line
+	4350 3350 4250 3350
+Wire Wire Line
+	4250 3350 4250 3550
+Wire Wire Line
+	4250 3550 4850 3550
+$Comp
+L power:GND #PWR01
+U 1 1 5AF901F7
+P 7000 3400
+F 0 "#PWR01" H 7000 3150 50  0001 C CNN
+F 1 "GND" H 7000 3250 50  0000 C CNN
+F 2 "" H 7000 3400 50  0001 C CNN
+F 3 "" H 7000 3400 50  0001 C CNN
+	1    7000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3350 7000 3350
+Wire Wire Line
+	7000 3350 7000 3400
+$Comp
+L power:GND #PWR02
+U 1 1 5AF9021B
+P 5650 4400
+F 0 "#PWR02" H 5650 4150 50  0001 C CNN
+F 1 "GND" H 5650 4250 50  0000 C CNN
+F 2 "" H 5650 4400 50  0001 C CNN
+F 3 "" H 5650 4400 50  0001 C CNN
+	1    5650 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 4300
+Wire Wire Line
+	6450 3250 6950 3250
+Wire Wire Line
+	4850 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 2750
+$Comp
+L Device:R R1
+U 1 1 5AF90453
+P 4650 4050
+F 0 "R1" V 4730 4050 50  0000 C CNN
+F 1 "100" V 4650 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 4050 50  0001 C CNN
+F 3 "" H 4650 4050 50  0001 C CNN
+	1    4650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5AF904C6
+P 4650 4650
+F 0 "C2" H 4675 4750 50  0000 L CNN
+F 1 "0.1u" H 4675 4550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4688 4500 50  0001 C CNN
+F 3 "" H 4650 4650 50  0001 C CNN
+	1    4650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3650 4050 3650
+Wire Wire Line
+	4650 3650 4650 3900
+Wire Wire Line
+	4650 4200 4650 4350
+$Comp
+L power:GND #PWR04
+U 1 1 5AF9056B
+P 4650 4900
+F 0 "#PWR04" H 4650 4650 50  0001 C CNN
+F 1 "GND" H 4650 4750 50  0000 C CNN
+F 2 "" H 4650 4900 50  0001 C CNN
+F 3 "" H 4650 4900 50  0001 C CNN
+	1    4650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4800 4650 4900
+Wire Wire Line
+	6450 3450 6850 3450
+Wire Wire Line
+	6850 3450 6850 4750
+Wire Wire Line
+	6850 4750 5100 4750
+Wire Wire Line
+	5100 4750 5100 4350
+Wire Wire Line
+	5100 4350 4650 4350
+Connection ~ 4650 4350
+Wire Wire Line
+	6450 3550 6650 3550
+Wire Wire Line
+	6450 3650 6650 3650
+Text Label 6500 3550 0    60   ~ 0
+PS/SYNC
+Text Label 6500 3650 0    60   ~ 0
+EN
+Connection ~ 4650 3650
+Text Label 4050 3650 0    60   ~ 0
+VIN
+$Comp
+L Device:C C1
+U 1 1 5AF90739
+P 4050 3950
+F 0 "C1" H 4075 4050 50  0000 L CNN
+F 1 "10u" H 4075 3850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 3800 50  0001 C CNN
+F 3 "" H 4050 3950 50  0001 C CNN
+	1    4050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5AF90775
+P 4050 4250
+F 0 "#PWR05" H 4050 4000 50  0001 C CNN
+F 1 "GND" H 4050 4100 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3800 4050 3650
+Connection ~ 4050 3650
+Wire Wire Line
+	4050 4250 4050 4100
+$Comp
+L Device:C C4
+U 1 1 5AF908CC
+P 7600 3000
+F 0 "C4" H 7625 3100 50  0000 L CNN
+F 1 "10u" H 7625 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7638 2850 50  0001 C CNN
+F 3 "" H 7600 3000 50  0001 C CNN
+	1    7600 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5AF9091A
+P 7600 3300
+F 0 "#PWR06" H 7600 3050 50  0001 C CNN
+F 1 "GND" H 7600 3150 50  0000 C CNN
+F 2 "" H 7600 3300 50  0001 C CNN
+F 3 "" H 7600 3300 50  0001 C CNN
+	1    7600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3300 7600 3150
+Wire Wire Line
+	7600 2850 7600 2750
+Connection ~ 7600 2750
+Text Label 7300 2750 0    60   ~ 0
+VOUT
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5AF90BF4
+P 3900 2950
+F 0 "J1" H 3900 3250 50  0000 C CNN
+F 1 "Conn_01x05" H 3900 2650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3900 2950 50  0001 C CNN
+F 3 "" H 3900 2950 50  0001 C CNN
+	1    3900 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 2750 3700 2750
+Wire Wire Line
+	3250 2850 3700 2850
+Wire Wire Line
+	3250 2950 3700 2950
+Wire Wire Line
+	3250 3150 3700 3150
+Wire Wire Line
+	3250 3050 3700 3050
+Text Label 3450 2750 0    60   ~ 0
+VOUT
+Text Label 3450 2850 0    60   ~ 0
+VIN
+Text Label 3250 2950 0    60   ~ 0
+PS/SYNC
+Text Label 3450 3050 0    60   ~ 0
+EN
+Text Label 3450 3150 0    60   ~ 0
+GND
+Wire Wire Line
+	5650 4300 5650 4400
+Wire Wire Line
+	4650 4350 4650 4500
+Wire Wire Line
+	4650 3650 4850 3650
+Wire Wire Line
+	4050 3650 4650 3650
+Wire Wire Line
+	7600 2750 7650 2750
+Wire Wire Line
+	4750 2750 6950 2750
+Wire Wire Line
+	6950 3250 6950 2750
+Connection ~ 6950 2750
+Wire Wire Line
+	6950 2750 7300 2750
+$Comp
+L Device:C C3
+U 1 1 5F4FE407
+P 7300 3000
+F 0 "C3" H 7325 3100 50  0000 L CNN
+F 1 "10u" H 7325 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7338 2850 50  0001 C CNN
+F 3 "" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F4FE79B
+P 7300 3300
+F 0 "#PWR0101" H 7300 3050 50  0001 C CNN
+F 1 "GND" H 7300 3150 50  0000 C CNN
+F 2 "" H 7300 3300 50  0001 C CNN
+F 3 "" H 7300 3300 50  0001 C CNN
+	1    7300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3150 7300 3300
+Wire Wire Line
+	7300 2850 7300 2750
+Connection ~ 7300 2750
+Wire Wire Line
+	7300 2750 7600 2750
+$EndSCHEMATC
