@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC
+10u,"C1,C3,C4",Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C15850
+0.1u,C2,Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C49678
+2.2uH,L1,Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder,C341775
+100,R1,Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder,C17408
+TPS63001,U1,KevinLibrary:TPS63000,C28060
